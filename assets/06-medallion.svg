@@ -1,0 +1,70 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="620" viewBox="0 0 1400 620">
+<defs>
+<linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+<stop stop-color="#03040A"/>
+<stop offset=".5" stop-color="#10082A"/>
+<stop offset="1" stop-color="#03050C"/>
+</linearGradient>
+
+<linearGradient id="med" x1="0" y1="0" x2="1" y2="0">
+<stop stop-color="#8B5CF6"/>
+<stop offset=".5" stop-color="#22D3EE"/>
+<stop offset="1" stop-color="#C084FC"/>
+</linearGradient>
+
+<pattern id="grid" width="42" height="42" patternUnits="userSpaceOnUse">
+<path d="M42 0H0V42" fill="none" stroke="#7C3AED" stroke-opacity=".12"/>
+</pattern>
+</defs>
+
+<rect width="1400" height="620" fill="url(#bg)"/>
+<rect width="1400" height="620" fill="url(#grid)"/>
+
+<text x="70" y="70" fill="#F5F3FF" font-family="Arial" font-size="34" font-weight="700">
+MEDALLION ARCHITECTURE
+</text>
+
+<text x="70" y="102" fill="#67E8F9" font-family="Arial" font-size="13" letter-spacing="3">
+MICRO → MACRO → DECISION
+</text>
+
+<g font-family="Arial" text-anchor="middle">
+
+<rect x="110" y="200" width="330" height="210" rx="28" fill="#080817" stroke="#8B5CF6" stroke-width="2"/>
+<text x="275" y="260" fill="#F5F3FF" font-size="29" font-weight="700">BRONZE</text>
+<text x="275" y="295" fill="#A5B4FC" font-size="12">SOURCE FIDELITY</text>
+<text x="275" y="335" fill="#94A3B8" font-size="12">RAW DATA</text>
+<text x="275" y="360" fill="#94A3B8" font-size="12">HISTORY</text>
+<text x="275" y="385" fill="#94A3B8" font-size="12">REPLAYABILITY</text>
+
+<rect x="535" y="200" width="330" height="210" rx="28" fill="#080817" stroke="#22D3EE" stroke-width="2"/>
+<text x="700" y="260" fill="#F5F3FF" font-size="29" font-weight="700">SILVER</text>
+<text x="700" y="295" fill="#67E8F9" font-size="12">STANDARDIZE + VALIDATE</text>
+<text x="700" y="335" fill="#94A3B8" font-size="12">SCHEMA</text>
+<text x="700" y="360" fill="#94A3B8" font-size="12">DUPLICATES</text>
+<text x="700" y="385" fill="#94A3B8" font-size="12">BUSINESS RULES</text>
+
+<rect x="960" y="200" width="330" height="210" rx="28" fill="#080817" stroke="#C084FC" stroke-width="2"/>
+<text x="1125" y="260" fill="#F5F3FF" font-size="29" font-weight="700">GOLD</text>
+<text x="1125" y="295" fill="#C084FC" font-size="12">ANALYTICAL MODEL</text>
+<text x="1125" y="335" fill="#94A3B8" font-size="12">KPIs</text>
+<text x="1125" y="360" fill="#94A3B8" font-size="12">DIMENSIONS</text>
+<text x="1125" y="385" fill="#94A3B8" font-size="12">DECISION DATA</text>
+
+</g>
+
+<g stroke="url(#med)" stroke-width="4" fill="none">
+<path d="M450 305 H515"/>
+<path d="M875 305 H940"/>
+</g>
+
+<g fill="#22D3EE">
+<path d="M510 295 L525 305 L510 315"/>
+<path d="M935 295 L950 305 L935 315"/>
+</g>
+
+<text x="700" y="490" text-anchor="middle" fill="#CBD5E1" font-family="Arial" font-size="12" letter-spacing="2">
+ONELAKE • DELTA • FABRIC DATA FACTORY • PYSPARK • SQL • POWER BI
+</text>
+
+</svg>
