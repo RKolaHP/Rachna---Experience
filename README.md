@@ -1,42 +1,15 @@
-# RACHNA.OS — PROFESSIONAL EXPERIENCE
-
-> **Data → Intelligence → Decision**  
-> Data Engineering × AI/ML × Analytics × Automation
-
-This repository documents my professional technical experience across data engineering, analytics, artificial intelligence, machine learning, healthcare data, scientific data, and analytical systems.
-
-It is designed as a **portfolio-safe professional evidence layer** connecting my resume, professional experience, technical architecture, and independently reproducible project work.
-
----
-
-## What This Repository Is
-
-My portfolio presents the finished systems.
-
-My resume presents the concise version.
-
-This repository provides the engineering context behind that work.
-
-```text
-                    RACHNA KOLA
-                         │
-                         ▼
-                ┌──────────────────┐
-                │     RESUME       │
-                └────────┬─────────┘
-                         │
-                         ▼
-                ┌──────────────────┐
-                │    EXPERIENCE    │
-                │   RACHNA.OS      │
-                └────────┬─────────┘
-                         │
-              ┌──────────┼──────────┐
-              ▼          ▼          ▼
-         Architecture  Skills   Experience
-              │          │          │
-              └──────────┼──────────┘
-                         ▼
-                ┌──────────────────┐
-                │ PROJECT REPOS    │
-                └──────────────────┘
+<div align="center">
+### `WHERE CURIOSITY MEETS POSSIBILITY`
+<img src="./assets/01-command-center.svg" width="100%">
+<img src="./assets/02-career-orbit.svg" width="100%">
+<img src="./assets/03-data-river.svg" width="100%">
+<img src="./assets/04-engineering-dna.svg" width="100%">
+<img src="./assets/05-trust-engine.svg" width="100%">
+<img src="./assets/06-medallion.svg" width="100%">
+<img src="./assets/07-ai-lab.svg" width="100%">
+<img src="./assets/08-healthcare-intelligence.svg" width="100%">
+<img src="./assets/09-experience-matrix.svg" width="100%">
+<img src="./assets/10-impact-constellation.svg" width="100%">
+<img src="./assets/11-repository-galaxy.svg" width="100%">
+<img src="./assets/12-system.svg" width="100%">
+</div>
