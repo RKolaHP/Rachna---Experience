@@ -1,0 +1,74 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="620" viewBox="0 0 1400 620">
+<defs>
+<linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+<stop stop-color="#03040A"/>
+<stop offset=".5" stop-color="#10082A"/>
+<stop offset="1" stop-color="#03050C"/>
+</linearGradient>
+
+<linearGradient id="galaxy" x1="0" y1="0" x2="1" y2="1">
+<stop stop-color="#8B5CF6"/>
+<stop offset=".5" stop-color="#22D3EE"/>
+<stop offset="1" stop-color="#C084FC"/>
+</linearGradient>
+
+<pattern id="grid" width="42" height="42" patternUnits="userSpaceOnUse">
+<path d="M42 0H0V42" fill="none" stroke="#7C3AED" stroke-opacity=".12"/>
+</pattern>
+</defs>
+
+<rect width="1400" height="620" fill="url(#bg)"/>
+<rect width="1400" height="620" fill="url(#grid)"/>
+
+<text x="70" y="70" fill="#F5F3FF" font-family="Arial" font-size="34" font-weight="700">
+REPOSITORY GALAXY
+</text>
+
+<text x="70" y="102" fill="#67E8F9" font-family="Arial" font-size="13" letter-spacing="3">
+ONE ECOSYSTEM • MANY LAYERS
+</text>
+
+<circle cx="700" cy="320" r="82" fill="#8B5CF6" opacity=".08"/>
+<circle cx="700" cy="320" r="68" fill="#080817" stroke="url(#galaxy)" stroke-width="3"/>
+
+<text x="700" y="315" text-anchor="middle" fill="#F5F3FF" font-family="Arial" font-size="18" font-weight="700">
+RACHNA.OS
+</text>
+
+<text x="700" y="339" text-anchor="middle" fill="#A5B4FC" font-family="Arial" font-size="11">
+CORE
+</text>
+
+<g fill="none" stroke="url(#galaxy)" stroke-opacity=".35" stroke-width="2">
+<line x1="700" y1="252" x2="700" y2="125"/>
+<line x1="758" y1="285" x2="1030" y2="205"/>
+<line x1="758" y1="355" x2="1030" y2="435"/>
+<line x1="700" y1="388" x2="700" y2="515"/>
+<line x1="642" y1="355" x2="370" y2="435"/>
+<line x1="642" y1="285" x2="370" y2="205"/>
+</g>
+
+<g fill="#22D3EE">
+<circle cx="700" cy="125" r="8"/>
+<circle cx="1030" cy="205" r="8"/>
+<circle cx="1030" cy="435" r="8"/>
+<circle cx="700" cy="515" r="8"/>
+<circle cx="370" cy="435" r="8"/>
+<circle cx="370" cy="205" r="8"/>
+</g>
+
+<g text-anchor="middle" font-family="Arial">
+<text x="700" y="105" fill="#EDE9FE" font-size="13" font-weight="700">RKolaHP</text>
+
+<text x="1070" y="190" fill="#EDE9FE" font-size="13" font-weight="700">Rachna---Experience</text>
+
+<text x="1070" y="460" fill="#EDE9FE" font-size="13" font-weight="700">RKola-s-Portfolio</text>
+
+<text x="700" y="545" fill="#EDE9FE" font-size="13" font-weight="700">Rachna-OS</text>
+
+<text x="330" y="460" fill="#EDE9FE" font-size="13" font-weight="700">HEALTHCARE-DATA-INTELLIGENCE</text>
+
+<text x="330" y="190" fill="#EDE9FE" font-size="13" font-weight="700">Rkola-s-GR</text>
+</g>
+
+</svg>
