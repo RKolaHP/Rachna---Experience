@@ -1,5 +1,7 @@
 <div align="center">
-### RACHNA.OS // `WHERE CURIOSITY MEETS POSSIBILITY`
+# RACHNA.OS
+### `WHERE CURIOSITY MEETS POSSIBILITY`
+<br>
 <img src="./assets/01-command-center.svg" width="100%">
 <img src="./assets/02-career-orbit.svg" width="100%">
 <img src="./assets/03-data-river.svg" width="100%">
