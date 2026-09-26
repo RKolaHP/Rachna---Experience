@@ -1,0 +1,73 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="620" viewBox="0 0 1400 620">
+<defs>
+<linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+<stop stop-color="#03040A"/>
+<stop offset=".5" stop-color="#10082A"/>
+<stop offset="1" stop-color="#03050C"/>
+</linearGradient>
+
+<linearGradient id="ai" x1="0" y1="0" x2="1" y2="1">
+<stop stop-color="#8B5CF6"/>
+<stop offset=".5" stop-color="#22D3EE"/>
+<stop offset="1" stop-color="#C084FC"/>
+</linearGradient>
+
+<pattern id="grid" width="42" height="42" patternUnits="userSpaceOnUse">
+<path d="M42 0H0V42" fill="none" stroke="#7C3AED" stroke-opacity=".12"/>
+</pattern>
+</defs>
+
+<rect width="1400" height="620" fill="url(#bg)"/>
+<rect width="1400" height="620" fill="url(#grid)"/>
+
+<text x="70" y="70" fill="#F5F3FF" font-family="Arial" font-size="34" font-weight="700">
+AI SIGNAL LAB
+</text>
+
+<text x="70" y="102" fill="#67E8F9" font-family="Arial" font-size="13" letter-spacing="3">
+MODELS • EXPERIMENTS • VALIDATION
+</text>
+
+<circle cx="700" cy="320" r="105" fill="#080817" stroke="url(#ai)" stroke-width="3"/>
+<circle cx="700" cy="320" r="145" fill="none" stroke="#8B5CF6" stroke-opacity=".18"/>
+
+<text x="700" y="315" text-anchor="middle" fill="#F5F3FF" font-family="Arial" font-size="26" font-weight="700">
+MODEL
+</text>
+
+<text x="700" y="343" text-anchor="middle" fill="#A5B4FC" font-family="Arial" font-size="13">
+LOOP
+</text>
+
+<g stroke="url(#ai)" stroke-opacity=".4" stroke-width="2">
+<line x1="700" y1="215" x2="700" y2="135"/>
+<line x1="795" y1="265" x2="1015" y2="180"/>
+<line x1="795" y1="375" x2="1015" y2="460"/>
+<line x1="700" y1="425" x2="700" y2="510"/>
+<line x1="605" y1="375" x2="385" y2="460"/>
+<line x1="605" y1="265" x2="385" y2="180"/>
+</g>
+
+<g fill="#22D3EE">
+<circle cx="700" cy="135" r="8"/>
+<circle cx="1015" cy="180" r="8"/>
+<circle cx="1015" cy="460" r="8"/>
+<circle cx="700" cy="510" r="8"/>
+<circle cx="385" cy="460" r="8"/>
+<circle cx="385" cy="180" r="8"/>
+</g>
+
+<g text-anchor="middle" fill="#CBD5E1" font-family="Arial" font-size="12" font-weight="600">
+<text x="700" y="115">TRAINING</text>
+<text x="1045" y="160">VALIDATION</text>
+<text x="1045" y="485">ERROR ANALYSIS</text>
+<text x="700" y="540">OPTIMIZATION</text>
+<text x="350" y="485">INFERENCE</text>
+<text x="350" y="160">FEATURE ENGINEERING</text>
+</g>
+
+<text x="700" y="580" text-anchor="middle" fill="#CBD5E1" font-family="Arial" font-size="12">
+~87% PREDICTIVE ACCURACY  •  ~18% LOWER MODEL VARIANCE  •  ~22% IoU IMPROVEMENT
+</text>
+
+</svg>
