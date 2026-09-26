@@ -1,0 +1,926 @@
+<svg
+  width="1400"
+  height="620"
+  viewBox="0 0 1400 620"
+  fill="none"
+  xmlns="http://www.w3.org/2000/svg">
+
+  <defs>
+
+    <!-- ========================================================= -->
+    <!-- BACKGROUND -->
+    <!-- ========================================================= -->
+
+    <linearGradient
+      id="bg"
+      x1="0"
+      y1="0"
+      x2="1400"
+      y2="620"
+      gradientUnits="userSpaceOnUse">
+
+      <stop offset="0%" stop-color="#02030A"/>
+      <stop offset="42%" stop-color="#09051B"/>
+      <stop offset="72%" stop-color="#0B0820"/>
+      <stop offset="100%" stop-color="#02040A"/>
+
+    </linearGradient>
+
+
+    <!-- ========================================================= -->
+    <!-- NEON GRADIENT -->
+    <!-- ========================================================= -->
+
+    <linearGradient
+      id="neon"
+      x1="350"
+      y1="180"
+      x2="1050"
+      y2="440"
+      gradientUnits="userSpaceOnUse">
+
+      <stop offset="0%" stop-color="#A855F7"/>
+      <stop offset="45%" stop-color="#7C3AED"/>
+      <stop offset="72%" stop-color="#22D3EE"/>
+      <stop offset="100%" stop-color="#67E8F9"/>
+
+    </linearGradient>
+
+
+    <!-- ========================================================= -->
+    <!-- GRID -->
+    <!-- ========================================================= -->
+
+    <pattern
+      id="grid"
+      width="40"
+      height="40"
+      patternUnits="userSpaceOnUse">
+
+      <path
+        d="M40 0H0V40"
+        stroke="#8B5CF6"
+        stroke-opacity="0.075"
+        stroke-width="1"/>
+
+    </pattern>
+
+
+    <pattern
+      id="microGrid"
+      width="10"
+      height="10"
+      patternUnits="userSpaceOnUse">
+
+      <path
+        d="M10 0H0V10"
+        stroke="#22D3EE"
+        stroke-opacity="0.025"
+        stroke-width="0.5"/>
+
+    </pattern>
+
+
+    <!-- ========================================================= -->
+    <!-- CENTER GLOW -->
+    <!-- ========================================================= -->
+
+    <radialGradient id="centerGlow">
+
+      <stop
+        offset="0%"
+        stop-color="#8B5CF6"
+        stop-opacity="0.30"/>
+
+      <stop
+        offset="45%"
+        stop-color="#22D3EE"
+        stop-opacity="0.08"/>
+
+      <stop
+        offset="100%"
+        stop-color="#02030A"
+        stop-opacity="0"/>
+
+    </radialGradient>
+
+
+    <!-- ========================================================= -->
+    <!-- PURPLE GLOW -->
+    <!-- ========================================================= -->
+
+    <filter
+      id="glowPurple"
+      x="-100%"
+      y="-100%"
+      width="300%"
+      height="300%">
+
+      <feGaussianBlur
+        stdDeviation="7"
+        result="blur"/>
+
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+
+    </filter>
+
+
+    <!-- ========================================================= -->
+    <!-- CYAN GLOW -->
+    <!-- ========================================================= -->
+
+    <filter
+      id="glowCyan"
+      x="-100%"
+      y="-100%"
+      width="300%"
+      height="300%">
+
+      <feGaussianBlur
+        stdDeviation="5"
+        result="blur"/>
+
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+
+    </filter>
+
+
+    <!-- ========================================================= -->
+    <!-- SOFT GLOW -->
+    <!-- ========================================================= -->
+
+    <filter
+      id="softGlow"
+      x="-100%"
+      y="-100%"
+      width="300%"
+      height="300%">
+
+      <feGaussianBlur
+        stdDeviation="25"/>
+
+    </filter>
+
+
+    <!-- ========================================================= -->
+    <!-- ARROW -->
+    <!-- ========================================================= -->
+
+    <marker
+      id="arrow"
+      markerWidth="8"
+      markerHeight="8"
+      refX="6"
+      refY="3"
+      orient="auto">
+
+      <path
+        d="M0 0L6 3L0 6"
+        stroke="#22D3EE"
+        stroke-width="1"
+        fill="none"/>
+
+    </marker>
+
+  </defs>
+
+
+  <!-- ========================================================= -->
+  <!-- BACKGROUND -->
+  <!-- ========================================================= -->
+
+  <rect
+    width="1400"
+    height="620"
+    fill="url(#bg)"/>
+
+  <rect
+    width="1400"
+    height="620"
+    fill="url(#grid)"/>
+
+  <rect
+    width="1400"
+    height="620"
+    fill="url(#microGrid)"/>
+
+
+  <!-- ========================================================= -->
+  <!-- CENTER ATMOSPHERE -->
+  <!-- ========================================================= -->
+
+  <ellipse
+    cx="700"
+    cy="300"
+    rx="470"
+    ry="245"
+    fill="url(#centerGlow)"/>
+
+
+  <!-- ========================================================= -->
+  <!-- TOP FRAME -->
+  <!-- ========================================================= -->
+
+  <line
+    x1="70"
+    y1="72"
+    x2="1330"
+    y2="72"
+    stroke="url(#neon)"
+    stroke-opacity="0.35"
+    stroke-width="1"/>
+
+
+  <!-- ========================================================= -->
+  <!-- TOP LEFT CORNER -->
+  <!-- ========================================================= -->
+
+  <path
+    d="M55 105V85H75"
+    stroke="#22D3EE"
+    stroke-opacity="0.65"
+    stroke-width="1"/>
+
+  <text
+    x="82"
+    y="58"
+    fill="#E2E8F0"
+    font-family="monospace"
+    font-size="12"
+    font-weight="600"
+    letter-spacing="4"
+    filter="url(#glowCyan)">
+
+    17RKOLA'S
+
+  </text>
+
+  <text
+    x="82"
+    y="77"
+    fill="#475569"
+    font-family="monospace"
+    font-size="8"
+    letter-spacing="2">
+
+    IDENTITY
+
+  </text>
+
+
+  <!-- ========================================================= -->
+  <!-- TOP RIGHT CORNER -->
+  <!-- ========================================================= -->
+
+  <path
+    d="M1345 105V85H1325"
+    stroke="#A855F7"
+    stroke-opacity="0.65"
+    stroke-width="1"/>
+
+  <text
+    x="1318"
+    y="58"
+    text-anchor="end"
+    fill="#E2E8F0"
+    font-family="monospace"
+    font-size="11"
+    letter-spacing="3">
+
+    17RKOLA'S / 00
+
+  </text>
+
+  <text
+    x="1318"
+    y="77"
+    text-anchor="end"
+    fill="#475569"
+    font-family="monospace"
+    font-size="8"
+    letter-spacing="2">
+
+    EXPERIENCE SYSTEM
+
+  </text>
+
+
+  <!-- ========================================================= -->
+  <!-- BOTTOM FRAME -->
+  <!-- ========================================================= -->
+
+  <line
+    x1="70"
+    y1="505"
+    x2="1330"
+    y2="505"
+    stroke="#334155"
+    stroke-opacity="0.35"
+    stroke-width="1"/>
+
+
+  <!-- ========================================================= -->
+  <!-- BOTTOM LEFT CORNER -->
+  <!-- ========================================================= -->
+
+  <path
+    d="M55 485V505H75"
+    stroke="#A855F7"
+    stroke-opacity="0.55"
+    stroke-width="1"/>
+
+  <text
+    x="82"
+    y="574"
+    fill="#94A3B8"
+    font-family="monospace"
+    font-size="9"
+    letter-spacing="3">
+
+    17RKOLA'S / SYSTEM
+
+  </text>
+
+
+  <!-- ========================================================= -->
+  <!-- BOTTOM RIGHT CORNER -->
+  <!-- ========================================================= -->
+
+  <path
+    d="M1345 485V505H1325"
+    stroke="#22D3EE"
+    stroke-opacity="0.55"
+    stroke-width="1"/>
+
+  <text
+    x="1318"
+    y="574"
+    text-anchor="end"
+    fill="#94A3B8"
+    font-family="monospace"
+    font-size="9"
+    letter-spacing="3">
+
+    17RKOLA'S // 00
+
+  </text>
+
+
+  <!-- ========================================================= -->
+  <!-- OUTER ORBIT -->
+  <!-- ========================================================= -->
+
+  <ellipse
+    cx="700"
+    cy="300"
+    rx="520"
+    ry="205"
+    transform="rotate(-8 700 300)"
+    stroke="#7C3AED"
+    stroke-opacity="0.16"
+    stroke-width="1"
+    stroke-dasharray="3 12"/>
+
+
+  <ellipse
+    cx="700"
+    cy="300"
+    rx="460"
+    ry="178"
+    transform="rotate(8 700 300)"
+    stroke="#22D3EE"
+    stroke-opacity="0.14"
+    stroke-width="1"
+    stroke-dasharray="2 18"/>
+
+
+  <!-- ========================================================= -->
+  <!-- INNER ORBIT -->
+  <!-- ========================================================= -->
+
+  <ellipse
+    cx="700"
+    cy="300"
+    rx="350"
+    ry="125"
+    transform="rotate(-6 700 300)"
+    stroke="url(#neon)"
+    stroke-opacity="0.25"
+    stroke-width="1"/>
+
+
+  <!-- ========================================================= -->
+  <!-- CORE GLOW -->
+  <!-- ========================================================= -->
+
+  <circle
+    cx="700"
+    cy="292"
+    r="160"
+    fill="#7C3AED"
+    opacity="0.045"
+    filter="url(#softGlow)"/>
+
+
+  <circle
+    cx="700"
+    cy="292"
+    r="105"
+    stroke="#A855F7"
+    stroke-opacity="0.12"
+    stroke-width="1"/>
+
+
+  <circle
+    cx="700"
+    cy="292"
+    r="82"
+    stroke="#22D3EE"
+    stroke-opacity="0.12"
+    stroke-width="1"/>
+
+
+  <!-- ========================================================= -->
+  <!-- CORE CROSSHAIR -->
+  <!-- ========================================================= -->
+
+  <line
+    x1="700"
+    y1="165"
+    x2="700"
+    y2="420"
+    stroke="#22D3EE"
+    stroke-opacity="0.07"
+    stroke-width="1"/>
+
+
+  <line
+    x1="570"
+    y1="292"
+    x2="830"
+    y2="292"
+    stroke="#A855F7"
+    stroke-opacity="0.07"
+    stroke-width="1"/>
+
+
+  <!-- ========================================================= -->
+  <!-- CENTRAL DATA FLOW -->
+  <!-- ========================================================= -->
+
+  <text
+    x="700"
+    y="274"
+    text-anchor="middle"
+    fill="url(#neon)"
+    font-family="Arial, Helvetica, sans-serif"
+    font-size="53"
+    font-weight="700"
+    letter-spacing="5"
+    filter="url(#glowPurple)">
+
+    DATA → INTELLIGENCE → DECISION
+
+  </text>
+
+
+  <!-- ========================================================= -->
+  <!-- CENTRAL DIVIDER -->
+  <!-- ========================================================= -->
+
+  <line
+    x1="430"
+    y1="298"
+    x2="970"
+    y2="298"
+    stroke="url(#neon)"
+    stroke-width="1.5"
+    stroke-opacity="0.75"/>
+
+
+  <circle
+    cx="430"
+    cy="298"
+    r="3"
+    fill="#A855F7"
+    filter="url(#glowPurple)"/>
+
+
+  <circle
+    cx="970"
+    cy="298"
+    r="3"
+    fill="#22D3EE"
+    filter="url(#glowCyan)"/>
+
+
+  <!-- ========================================================= -->
+  <!-- TAGLINE -->
+  <!-- ========================================================= -->
+
+  <text
+    x="700"
+    y="330"
+    text-anchor="middle"
+    fill="#CBD5E1"
+    font-family="monospace"
+    font-size="16"
+    font-weight="400"
+    letter-spacing="5">
+
+    WHERE CURIOSITY MEETS POSSIBILITY
+
+  </text>
+
+
+  <!-- ========================================================= -->
+  <!-- SUPPORTING SYSTEM LINE -->
+  <!-- ========================================================= -->
+
+  <text
+    x="700"
+    y="355"
+    text-anchor="middle"
+    fill="#64748B"
+    font-family="monospace"
+    font-size="9"
+    letter-spacing="3">
+
+    BUILDING SYSTEMS THAT TURN DATA INTO SIGNAL
+
+  </text>
+
+
+  <!-- ========================================================= -->
+  <!-- CAPABILITY FLOW -->
+  <!-- ========================================================= -->
+
+  <line
+    x1="390"
+    y1="430"
+    x2="570"
+    y2="430"
+    stroke="#22D3EE"
+    stroke-opacity="0.35"
+    stroke-width="1"
+    marker-end="url(#arrow)"/>
+
+
+  <line
+    x1="830"
+    y1="430"
+    x2="1010"
+    y2="430"
+    stroke="#A855F7"
+    stroke-opacity="0.35"
+    stroke-width="1"
+    marker-end="url(#arrow)"/>
+
+
+  <!-- ========================================================= -->
+  <!-- DATA ENGINEERING -->
+  <!-- ========================================================= -->
+
+  <rect
+    x="185"
+    y="404"
+    width="205"
+    height="58"
+    rx="8"
+    fill="#070914"
+    stroke="#22D3EE"
+    stroke-opacity="0.25"/>
+
+
+  <circle
+    cx="207"
+    cy="433"
+    r="5"
+    fill="#22D3EE"
+    filter="url(#glowCyan)"/>
+
+
+  <text
+    x="222"
+    y="430"
+    fill="#E2E8F0"
+    font-family="monospace"
+    font-size="11"
+    letter-spacing="2">
+
+    DATA ENGINEERING
+
+  </text>
+
+
+  <text
+    x="222"
+    y="447"
+    fill="#475569"
+    font-family="monospace"
+    font-size="8"
+    letter-spacing="1.5">
+
+    BUILD / STRUCTURE / TRUST
+
+  </text>
+
+
+  <!-- ========================================================= -->
+  <!-- INTELLIGENCE -->
+  <!-- ========================================================= -->
+
+  <rect
+    x="597"
+    y="404"
+    width="206"
+    height="58"
+    rx="8"
+    fill="#070914"
+    stroke="url(#neon)"
+    stroke-opacity="0.4"/>
+
+
+  <circle
+    cx="620"
+    cy="433"
+    r="5"
+    fill="#A855F7"
+    filter="url(#glowPurple)"/>
+
+
+  <text
+    x="635"
+    y="430"
+    fill="#E2E8F0"
+    font-family="monospace"
+    font-size="11"
+    letter-spacing="2">
+
+    INTELLIGENCE
+
+  </text>
+
+
+  <text
+    x="635"
+    y="447"
+    fill="#475569"
+    font-family="monospace"
+    font-size="8"
+    letter-spacing="1.5">
+
+    AI / ML / ANALYTICS
+
+  </text>
+
+
+  <!-- ========================================================= -->
+  <!-- DECISION -->
+  <!-- ========================================================= -->
+
+  <rect
+    x="1010"
+    y="404"
+    width="205"
+    height="58"
+    rx="8"
+    fill="#070914"
+    stroke="#A855F7"
+    stroke-opacity="0.25"/>
+
+
+  <circle
+    cx="1032"
+    cy="433"
+    r="5"
+    fill="#A855F7"
+    filter="url(#glowPurple)"/>
+
+
+  <text
+    x="1047"
+    y="430"
+    fill="#E2E8F0"
+    font-family="monospace"
+    font-size="11"
+    letter-spacing="2">
+
+    DECISION
+
+  </text>
+
+
+  <text
+    x="1047"
+    y="447"
+    fill="#475569"
+    font-family="monospace"
+    font-size="8"
+    letter-spacing="1.5">
+
+    INSIGHT / ACTION / IMPACT
+
+  </text>
+
+
+  <!-- ========================================================= -->
+  <!-- CORE CONNECTOR -->
+  <!-- ========================================================= -->
+
+  <line
+    x1="700"
+    y1="355"
+    x2="700"
+    y2="404"
+    stroke="url(#neon)"
+    stroke-width="1"
+    stroke-opacity="0.45"/>
+
+
+  <circle
+    cx="700"
+    cy="380"
+    r="3"
+    fill="#22D3EE"
+    filter="url(#glowCyan)"/>
+
+
+  <!-- ========================================================= -->
+  <!-- DOMAIN STRIP -->
+  <!-- ========================================================= -->
+
+  <text
+    x="72"
+    y="531"
+    fill="#475569"
+    font-family="monospace"
+    font-size="9"
+    letter-spacing="2">
+
+    HEALTHCARE
+
+  </text>
+
+
+  <text
+    x="270"
+    y="531"
+    fill="#475569"
+    font-family="monospace"
+    font-size="9"
+    letter-spacing="2">
+
+    PHARMACEUTICALS
+
+  </text>
+
+
+  <text
+    x="510"
+    y="531"
+    fill="#475569"
+    font-family="monospace"
+    font-size="9"
+    letter-spacing="2">
+
+    RESEARCH
+
+  </text>
+
+
+  <text
+    x="700"
+    y="531"
+    fill="#475569"
+    font-family="monospace"
+    font-size="9"
+    letter-spacing="2">
+
+    DATA
+
+  </text>
+
+
+  <text
+    x="820"
+    y="531"
+    fill="#475569"
+    font-family="monospace"
+    font-size="9"
+    letter-spacing="2">
+
+    AI / ML
+
+  </text>
+
+
+  <text
+    x="950"
+    y="531"
+    fill="#475569"
+    font-family="monospace"
+    font-size="9"
+    letter-spacing="2">
+
+    ANALYTICS
+
+  </text>
+
+
+  <text
+    x="1100"
+    y="531"
+    fill="#475569"
+    font-family="monospace"
+    font-size="9"
+    letter-spacing="2">
+
+    AUTOMATION
+
+  </text>
+
+
+  <!-- ========================================================= -->
+  <!-- STATUS -->
+  <!-- ========================================================= -->
+
+  <circle
+    cx="72"
+    cy="570"
+    r="3"
+    fill="#22D3EE"
+    filter="url(#glowCyan)"/>
+
+
+  <text
+    x="84"
+    y="574"
+    fill="#64748B"
+    font-family="monospace"
+    font-size="9"
+    letter-spacing="2">
+
+    SYSTEM ONLINE
+
+  </text>
+
+
+  <text
+    x="700"
+    y="574"
+    text-anchor="middle"
+    fill="#475569"
+    font-family="monospace"
+    font-size="8"
+    letter-spacing="3">
+
+    CURIOUS BY DESIGN / BUILT TO EVOLVE
+
+  </text>
+
+
+  <!-- ========================================================= -->
+  <!-- PARTICLES -->
+  <!-- ========================================================= -->
+
+  <g fill="#22D3EE">
+
+    <circle cx="125" cy="155" r="1.5"/>
+    <circle cx="160" cy="205" r="1"/>
+    <circle cx="250" cy="125" r="1.5"/>
+    <circle cx="315" cy="485" r="1"/>
+    <circle cx="430" cy="520" r="1.5"/>
+    <circle cx="1140" cy="130" r="1"/>
+    <circle cx="1240" cy="180" r="1.5"/>
+    <circle cx="1280" cy="350" r="1"/>
+    <circle cx="1160" cy="490" r="1.5"/>
+    <circle cx="970" cy="550" r="1"/>
+    <circle cx="510" cy="110" r="1"/>
+    <circle cx="850" cy="120" r="1.5"/>
+
+  </g>
+
+
+  <g fill="#A855F7">
+
+    <circle cx="145" cy="310" r="1"/>
+    <circle cx="285" cy="250" r="1.5"/>
+    <circle cx="350" cy="530" r="1"/>
+    <circle cx="470" cy="170" r="1"/>
+    <circle cx="930" cy="155" r="1.5"/>
+    <circle cx="1080" cy="300" r="1"/>
+    <circle cx="1210" cy="430" r="1.5"/>
+    <circle cx="1290" cy="280" r="1"/>
+    <circle cx="890" cy="520" r="1"/>
+    <circle cx="550" cy="550" r="1.5"/>
+
+  </g>
+
+</svg>
