@@ -17,7 +17,7 @@
     *{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:85px}body{margin:0;background:radial-gradient(ellipse at 12% 0%,rgba(109,76,190,.17),transparent 36%),radial-gradient(ellipse at 94% 30%,rgba(35,160,190,.09),transparent 32%),var(--bg);color:var(--text);font-family:"DM Sans",sans-serif;line-height:1.65}
     body:before{content:"";position:fixed;inset:0;z-index:-1;pointer-events:none;background-image:linear-gradient(rgba(150,170,210,.025) 1px,transparent 1px),linear-gradient(90deg,rgba(150,170,210,.025) 1px,transparent 1px);background-size:48px 48px}
     a{color:inherit;text-decoration:none}.wrap{width:min(var(--max),calc(100% - 44px));margin-inline:auto}.mono,.eyebrow,.nav a,.tag,.status,.index{font-family:"DM Mono",monospace}
-    .topbar{position:sticky;top:0;z-index:10;background:rgba(6,8,18,.86);backdrop-filter:blur(18px);border-bottom:1px solid var(--line)}nav{height:72px;display:flex;align-items:center;justify-content:space-between;gap:20px}.brand{font:500 12px "DM Mono",monospace;letter-spacing:.15em}.brand b{color:var(--cyan);font-weight:500}.navlinks{display:flex;gap:25px}.navlinks a{font-size:10px;letter-spacing:.1em;color:var(--muted)}.navlinks a:hover{color:var(--cyan)}
+    .topbar{position:sticky;top:0;z-index:10;background:rgba(6,8,18,.86);backdrop-filter:blur(18px);border-bottom:1px solid var(--line)}nav{height:72px;display:flex;align-items:center;justify-content:space-between;gap:20px}.brand{display:inline-flex;align-items:center;gap:12px;letter-spacing:.12em}.brand-symbol{width:39px;height:39px;color:#d9e7fa;flex:none}.brand-name{display:flex;flex-direction:column;font:500 11px "DM Mono",monospace;line-height:1.45;letter-spacing:.16em}.brand-name b{color:var(--cyan);font-weight:500}.brand-name small{font-size:7px;color:var(--dim);letter-spacing:.14em;margin-top:3px}.navlinks{display:flex;gap:25px}.navlinks a{font-size:10px;letter-spacing:.1em;color:var(--muted)}.navlinks a:hover{color:var(--cyan)}
     .hero{padding:94px 0 55px}.eyebrow{font-size:10px;letter-spacing:.2em;color:var(--cyan);text-transform:uppercase}.hero h1{font:600 clamp(43px,7vw,78px)/1.02 "Space Grotesk",sans-serif;letter-spacing:-.06em;margin:20px 0}.hero h1 span{background:linear-gradient(100deg,#fff 8%,var(--violet) 54%,var(--cyan));background-clip:text;-webkit-background-clip:text;color:transparent}.hero-copy{max-width:740px;color:#b3c0d3;font-size:16px;line-height:1.9}.hero-bottom{display:flex;flex-wrap:wrap;align-items:center;gap:10px;margin-top:28px}.tag{font-size:9px;letter-spacing:.08em;color:#bdc9dc;border:1px solid var(--line);padding:7px 10px;border-radius:4px}
     .manifesto{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin:28px auto 75px}.manifesto article{padding:22px;border:1px solid var(--line);border-radius:9px;background:rgba(12,18,34,.75)}.manifesto h2{font:500 17px "Space Grotesk",sans-serif;margin:0 0 8px}.manifesto p{font-size:12px;color:var(--muted);margin:0;line-height:1.8}
     .section-head{display:flex;justify-content:space-between;align-items:end;gap:25px;margin-bottom:25px}.section-head h2{font:500 clamp(28px,4vw,42px)/1.1 "Space Grotesk",sans-serif;letter-spacing:-.04em;margin:8px 0 0}.section-head p{max-width:420px;color:var(--muted);font-size:12px;margin:0}
@@ -27,13 +27,20 @@
     .principles{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-bottom:80px}.principle{padding:18px;border:1px solid var(--line);border-radius:8px;background:rgba(12,18,34,.55)}.principle h3{font:500 13px "Space Grotesk",sans-serif;margin:0 0 6px}.principle p{font-size:11px;color:var(--muted);margin:0;line-height:1.75}
     footer{border-top:1px solid var(--line);padding:25px 0 38px;display:flex;justify-content:space-between;gap:14px;color:var(--dim);font:9px "DM Mono",monospace;letter-spacing:.08em}
     @media(max-width:720px){.hero{padding:65px 0 35px}.manifesto{grid-template-columns:1fr;margin-bottom:58px}.projects{grid-template-columns:1fr}.project.wide{grid-column:auto}.steps{grid-template-columns:repeat(2,1fr)}.principles{grid-template-columns:1fr}.section-head{display:block}.section-head p{margin-top:12px}}
-    @media(max-width:520px){.wrap{width:calc(100% - 28px)}nav{height:64px}.navlinks{gap:12px}.navlinks a{font-size:8px}.navlinks a:nth-child(2){display:none}.brand{font-size:10px}.hero h1{font-size:43px}.hero-copy{font-size:14px}.project{padding:20px;min-height:0}.project h3{font-size:21px}.sequence{padding:19px}footer{display:block;line-height:2.2}}
+    @media(max-width:520px){.wrap{width:calc(100% - 28px)}nav{height:64px}.navlinks{gap:12px}.navlinks a{font-size:8px}.navlinks a:nth-child(2){display:none}.brand-name{font-size:9px}.brand-name small{font-size:6px}.brand-symbol{width:34px;height:34px}.hero h1{font-size:43px}.hero-copy{font-size:14px}.project{padding:20px;min-height:0}.project h3{font-size:21px}.sequence{padding:19px}footer{display:block;line-height:2.2}}
     @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*:before,*:after{transition:none!important}}
   </style>
 </head>
 <body>
   <header class="topbar"><nav class="wrap" aria-label="Project navigation">
-    <a class="brand" href="#home">RK <b>// INTELLIGENCE LAB</b></a>
+    <a class="brand" href="#home" aria-label="RK Intelligence Lab home">
+      <svg class="brand-symbol" viewBox="0 0 42 42" role="img" aria-label="Abstract connected-node emblem">
+        <path d="M21 2.8 37 12v18L21 39.2 5 30V12L21 2.8Z" fill="none" stroke="currentColor" stroke-width="1.4"/>
+        <path d="M12 27V15h6.2a4.2 4.2 0 0 1 0 8.4H12m6.2-1.2L27 29M25 15l5 5-5 5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+        <circle cx="30" cy="12" r="2" fill="#5cdaed"/><circle cx="12" cy="30" r="2" fill="#ad91fa"/>
+      </svg>
+      <span class="brand-name">INTELLIGENCE <b>LAB</b><small>INDEPENDENT PRODUCT STUDIO</small></span>
+    </a>
     <div class="navlinks"><a href="#projects">APPLICATIONS</a><a href="#approach">APPROACH</a></div>
   </nav></header>
   <main id="home">
